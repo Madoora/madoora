@@ -175,7 +175,7 @@ function App() {
       </div>
       {/* portfolio */}
       {/* form */}
-      <div className="grid lg:grid-cols-2 mt-20 md:mt-32 mx-10 md:mx-20">
+      <div className="grid lg:grid-cols-2 md:shadow-lg mt-20 md:mt-32 mx-10 md:mx-20">
         <div className="hidden md:block bg-[#1c1a1b] h-72 lg:h-full">
           <img src={Boljem} className="object-contain lg:object-cover w-full h-full" alt="" />
         </div>
