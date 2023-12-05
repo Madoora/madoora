@@ -9,10 +9,13 @@ import Boljem from './assets/boljem-Low.jpg';
 function App() {
   return (
     <div className="bg-[url('./assets/BG-Pattern.jpg')] bg-repeat relative overflow-hidden">
+      <div className="absolute hidden md:block top-0 lg:top-10 -ml-44 md:w-[1200px] 2xl:w-full 2xl:-ml-60">
+        <img src={HeaderImage} alt="" className="w-full" />
+      </div>
       {/* header */}
-      <div className="p-10 min-h-[600px] overflow-hidden relative">
+      <div className="p-10 2xl:p-20 2xl:px-0 min-h-[600px] 2xl:min-h-[800px] 2xl:w-[1140px] 2xl:mx-auto overflow-hidden relative">
         {/* heading1 */}
-        <div className="mt-4 md:ml-10 text-2xl md:text-4xl tracking-widest">
+        <div className="mt-4 md:ml-10 2xl:ml-0 text-2xl md:text-4xl tracking-widest">
           <div className="flex gap-3 items-center">
             <h1 className="font-georgia">Hello</h1>
             <div className="h-0.5 w-12 mt-2 bg-black"></div>
@@ -24,30 +27,32 @@ function App() {
         <div className="absolute w-[1500px] -ml-72 -mt-72 rotate-[5deg] md:hidden">
           <img src={HeaderImageMobile} width="900" alt="" />
         </div>
-        <div className="absolute hidden md:block top-0 lg:top-10 -ml-44 md:w-[1200px] ">
+        {/* <div className="absolute hidden  top-0 lg:top-10 -ml-44 md:w-[1200px] 2xl:w-[1500px] 2xl:-ml-[300px]">
           <img src={HeaderImage} alt="" className="" />
-        </div>
+        </div> */}
         {/* header-image */}
         {/* yellow-line */}
-        <div className="bg-madooraYellow mix-blend-multiply w-28 absolute top-0 bottom-0 right-32 md:right-1/3">
-          <div className="h-7 w-7 bg-black absolute -right-4 top-6"></div>
+        <div className="bg-madooraYellow mix-blend-multiply w-28 2xl:w-40 absolute top-0 bottom-0 right-32 md:right-1/3">
+          <div className="h-7 w-7 2xl:h-10 2xl:w-10 bg-black absolute -right-4  top-6"></div>
         </div>
         {/* yellow-line */}
         {/* logo */}
-        <div className="text-5xl md:text-7xl font-indigo text-right absolute right-8 bottom-8 md:right-24 lg:right-40">
+        <div className="text-5xl md:text-7xl 2xl:text-9xl font-indigo text-right absolute right-8 bottom-8 md:right-24 lg:right-40 2xl:right-5">
           Madoora
         </div>
         {/* logo */}
       </div>
       {/* header */}
       {/* section-1 */}
-      <div className="p-10 md:p-20 h-full">
+      <div className="p-10 md:p-20 2xl:p-0 2xl:mt-32 2xl:w-[1140px] 2xl:mx-auto">
         {/* content */}
-        <div className="grid gap-8 font-helvetica">
+        <div className="grid 2xl:grid-cols-3 gap-8 font-helvetica">
           {/* content-1 */}
           <div className="flex justify-start">
-            <div className="w-[85%] lg:w-3/4">
-              <h3 className="text-xl font-bold tracking-widest">Website Design</h3>
+            <div className="w-[85%] lg:w-3/4 2xl:w-full">
+              <h3 className="text-xl 2xl:text-2xl 2xl:font-georgia font-bold tracking-widest">
+                Website Design
+              </h3>
               <p className="mt-2">
                 Elevate your brand with Madoora's exceptional website design service—where
                 innovation, aesthetics, and user experience converge seamlessly.
@@ -57,8 +62,10 @@ function App() {
           {/* content-1 */}
           {/* content-2 */}
           <div className="flex justify-end lg:justify-start">
-            <div className="text-right lg:text-left w-[85%] lg:w-3/4">
-              <h3 className="text-xl font-bold tracking-widest">Website Development</h3>
+            <div className="text-right lg:text-left w-[85%] lg:w-3/4 2xl:w-full">
+              <h3 className="text-xl 2xl:text-2xl 2xl:font-georgia font-bold tracking-widest">
+                Website Development
+              </h3>
               <p className="mt-2">
                 Madoora transforms ideas into dynamic online solutions with expert website
                 development—innovation, efficiency, and user-focused excellence
@@ -68,8 +75,10 @@ function App() {
           {/* content-2 */}
           {/* content-3 */}
           <div className="flex justify-start">
-            <div className="w-[85%] lg:w-3/4">
-              <h3 className="text-xl font-bold tracking-widest">Logo Design</h3>
+            <div className="w-[85%] lg:w-3/4 2xl:w-full">
+              <h3 className="text-xl 2xl:text-2xl 2xl:font-georgia font-bold tracking-widest">
+                Logo Design
+              </h3>
               <p className="mt-2">
                 Madoora crafts impactful logos that capture your brand essence, blending creativity
                 and strategy for lasting impressions.
@@ -80,14 +89,14 @@ function App() {
         </div>
         {/* content */}
         {/* image */}
-        <div className="w-[800px] absolute top-[400px] -right-[350px] hidden lg:block">
+        <div className="w-[800px] 2xl:w-[900px] absolute top-[400px] -right-[350px] 2xl:-right-[300px] hidden lg:block">
           <img src={DeadWood} alt="" className="transform -scale-x-100 rotate-[30deg]" />
         </div>
         {/* image */}
       </div>
       {/* section-1 */}
       {/* step-we-work */}
-      <div className="mt-10 lg:px-20 grid lg:grid-cols-2 w-full">
+      <div className="mt-10 2xl:mt-32 lg:px-20 2xl:px-0 grid lg:grid-cols-2 w-full 2xl:w-[1140px] 2xl:mx-auto">
         {/* heading */}
         <div className="flex justify-between items-center lg:items-start">
           <div className="ml-10 md:ml-20 lg:ml-0 w-[50%]">
@@ -102,7 +111,7 @@ function App() {
         {/* heading */}
         {/* content */}
         <div className="mt-14 lg:mt-0 font-georgia text-lg lg:-ml-20">
-          <div className="flex gap-10 px-10 md:px-20 py-5 border-y border-black">
+          <div className="flex gap-10 px-10 md:px-20 2xl:px-10 py-5 border-y border-black">
             <div>
               <p>01</p>
             </div>
@@ -110,7 +119,7 @@ function App() {
               <p>Briefing and Research</p>
             </div>
           </div>
-          <div className="flex gap-10 px-10 md:px-20 py-5 border-b border-black">
+          <div className="flex gap-10 px-10 md:px-20 2xl:px-10 py-5 border-b border-black">
             <div>
               <p>02</p>
             </div>
@@ -118,7 +127,7 @@ function App() {
               <p>Brainstorming & Sketching</p>
             </div>
           </div>
-          <div className="flex gap-10 px-10 md:px-20 py-5 border-b border-black">
+          <div className="flex gap-10 px-10 md:px-20 2xl:px-10 py-5 border-b border-black">
             <div>
               <p>03</p>
             </div>
@@ -126,7 +135,7 @@ function App() {
               <p>Designing & Detailing</p>
             </div>
           </div>
-          <div className="flex gap-10 px-10 md:px-20 py-5 border-b border-black">
+          <div className="flex gap-10 px-10 md:px-20 2xl:px-10 py-5 border-b border-black">
             <div>
               <p>04</p>
             </div>
@@ -134,7 +143,7 @@ function App() {
               <p>Developing & Testing</p>
             </div>
           </div>
-          <div className="flex gap-10 px-10 md:px-20 py-5 border-b border-black">
+          <div className="flex gap-10 px-10 md:px-20 2xl:px-10 py-5 border-b border-black">
             <div>
               <p>05</p>
             </div>
@@ -147,27 +156,36 @@ function App() {
       </div>
       {/* step-we-work */}
       {/* portfolio */}
-      <div className="mt-10 xs:mt-20">
+      <div className="mt-10 xs:mt-20 2xl:mt-32">
         {/* heading */}
-        <div className="flex justify-start items-center">
-          <div className="h-16 lg:h-28 w-[40%] lg:w-[60%] bg-madooraYellow mix-blend-multiply relative">
+        <div className="flex justify-start items-center relative">
+          <div className="h-16 lg:h-28 w-[40%] lg:w-[60%] 2xl:w-[40%] bg-madooraYellow mix-blend-multiply relative">
             <div className="h-7 w-7 bg-black absolute -bottom-3 -right-3 rotate-45"></div>
           </div>
-          <div className="ml-10 lg:ml-20 lg:w-full lg:flex lg:items-center lg:pr-20 gap-10">
+          <div className="ml-10 lg:ml-20 lg:w-full lg:flex lg:items-center lg:pr-20 2xl:pr-0 gap-10 2xl:hidden">
             <h2 className="font-indigo text-[40px] md:text-5xl">Portfolio</h2>
             <hr className="w-full hidden lg:block bg-black h-0.5" />
           </div>
+          {/* heading2xl-screen */}
+          <div className="hidden 2xl:flex justify-start items-center 2xl:w-[1140px] absolute translate-x-[34%]">
+            <div className="h-16 lg:h-28 w-[40%] lg:w-[60%]  mix-blend-multiply relative"></div>
+            <div className="ml-10 lg:ml-20 lg:w-full lg:flex lg:items-center lg:pr-20 2xl:pr-0 gap-10">
+              <h2 className="font-indigo text-[40px] text-6xl tracking-wider">Portfolio</h2>
+              <hr className="w-full hidden lg:block bg-black h-0.5" />
+            </div>
+          </div>
+          {/* heading2xl-screen */}
         </div>
         {/* heading */}
         {/* content */}
-        <div className="px-10 md:px-20 mt-10 xs:mt-20 grid md:grid-cols-3 gap-5">
-          <div className="bg-red-400 h-[350px]">
+        <div className="px-10 md:px-20 2xl:px-0 mt-10 xs:mt-20 2xl:mt-32 grid md:grid-cols-3 gap-5 2xl:gap-10 2xl:w-[1350px] 2xl:mx-auto ">
+          <div className="h-[350px] 2xl:h-full">
             <img src={MadooraGarden} alt="" className="h-full w-full object-cover object-top" />
           </div>
-          <div className="bg-red-400 h-[350px]">
+          <div className="h-[350px] 2xl:h-full">
             <img src={AlamoConcrete} alt="" className="h-full w-full object-cover object-top" />
           </div>
-          <div className="bg-red-400 h-[350px]">
+          <div className="h-[350px] 2xl:h-full">
             <img src={AlamoLandscaping} alt="" className="h-full w-full object-cover object-top" />
           </div>
         </div>
@@ -175,7 +193,7 @@ function App() {
       </div>
       {/* portfolio */}
       {/* form */}
-      <div className="grid lg:grid-cols-2 md:shadow-lg mt-20 md:mt-32 mx-10 md:mx-20">
+      <div className="grid lg:grid-cols-2 md:shadow-lg mt-20 md:mt-32 2xl:mt-48 mx-10 md:mx-20 2xl:w-[1140px] 2xl:mx-auto">
         <div className="hidden md:block bg-[#1c1a1b] h-72 lg:h-full">
           <img src={Boljem} className="object-contain lg:object-cover w-full h-full" alt="" />
         </div>
@@ -220,11 +238,11 @@ function App() {
       </div>
       {/* form*/}
       {/* footer */}
-      <footer className="mt-20 md:mt-28 flex gap-5 xs:gap-10 pr-10 md:pr-20">
+      <footer className="mt-20 md:mt-28 flex gap-5 xs:gap-10 2xl:gap-0 pr-10 md:pr-20">
         <div className="bg-madooraYellow w-[90px] relative">
           <div className="h-6 w-6 bg-black absolute top-8 -right-3 rotate-45"></div>
         </div>
-        <div className="w-full pt-3 pb-5">
+        <div className="w-full 2xl:w-[1140px] mx-auto pt-3 pb-5">
           <div className="flex justify-between items-end">
             <div className="flex gap-3 mb-4">
               <div className="w-2.5 h-2.5 bg-black"></div>
