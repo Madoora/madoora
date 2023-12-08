@@ -17,6 +17,9 @@ export default {
       colors: {
         madooraYellow: '#efb814',
       },
+      transitionProperty: {
+        left: 'left',
+      },
     },
   },
   plugins: [],
