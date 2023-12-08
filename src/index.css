@@ -16,3 +16,13 @@
   font-family: 'Helvetica';
   src: url('./assets/fonts/Helvetica.ttf');
 }
+
+.madoora-card-team {
+  margin-left: -350px;
+  transition: all 1s ease;
+}
+
+.madoora-card-team-active {
+  margin-left: 0;
+  transition: all 1s ease;
+}
