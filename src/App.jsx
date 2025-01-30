@@ -255,8 +255,8 @@ function App() {
         {/* card */}
         <div className="grid gap-2">
           <CardOurTeam name="Ega <br /> Wahyudi" jobDesk="Designer" image={Ega} />
-          <CardOurTeam name="Bayu <br /> Wicaksono" jobDesk="Developer" image={Bayu} />
-          <CardOurTeam name="Kukuh <br /> Pribadi" jobDesk="Cheerfull" image={Kukuh} />
+          <CardOurTeam name="Bayu <br /> Wicaksono" jobDesk="Web Developer" image={Bayu} />
+          <CardOurTeam name="Kukuh <br /> Pribadi" jobDesk="Web Developer" image={Kukuh} />
         </div>
         {/* card */}
       </div>
